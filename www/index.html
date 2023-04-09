@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <h1 class="text-4xl text-cyan">Go Full stack</h1>
+    <p class="text-2xl">Hello, {{.Username}}, you are {{.Age}}</p>
+    {{ if .IsAdmin }}
+    <p class="text-xl">Admin</p>
+    {{ else }}
+    <p>Not Admin</p>
+    {{ end }}
+  </body>
+</html>
